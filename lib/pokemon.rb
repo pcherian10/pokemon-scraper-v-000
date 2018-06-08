@@ -6,12 +6,10 @@ class Pokemon
 
   @@all = []
 
-  def initialize (id:, name:, type:, hp: nil, db:)
-    @id = id
+  def initialize (name:, type:, db:)
     @name = name
     @type = type
     @db = db
-    @hp = hp
   end
 
   def self.save (name, type, db)
