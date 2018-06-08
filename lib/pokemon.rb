@@ -12,7 +12,7 @@ class Pokemon
   end
 
   def self.find (id)
-    @@all[id]    
+    @@all[id]
   end
 
 
