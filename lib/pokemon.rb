@@ -16,7 +16,7 @@ class Pokemon
   end
 
   def find
-    "SELECT * FROM db"
+    "SELECT name.id FROM db"
   end
 
 
