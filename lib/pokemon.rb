@@ -5,6 +5,7 @@ class Pokemon
   def initialize (name, type)
     @name = name
     @type = type
+    @@all << self
   end
 
   def self.save (name, type, db)
