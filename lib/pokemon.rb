@@ -6,9 +6,10 @@ class Pokemon
 
   @@all = []
 
-  def initialize (name, type)
+  def initialize (name, type, db)
     @name = name
     @type = type
+    @db = db
   end
 
   def self.save (name, type, db)
@@ -16,7 +17,7 @@ class Pokemon
   end
 
   def find (id, db)
-    "SELECT name.id FROM db"
+    "SELECT pokemon. FROM db"
   end
 
 
