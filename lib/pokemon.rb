@@ -4,10 +4,11 @@ class Pokemon
 
   @@all = []
 
-  def initialize (:id, :name, :type, :db)
+  def initialize (:id, :name, :type)
+    @id = id
     @name = name
     @type = type
-    db = SQLite3::Database.new()
+      
   end
 
   def self.save (name, type, db)
