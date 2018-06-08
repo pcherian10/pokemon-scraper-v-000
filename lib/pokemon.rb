@@ -4,19 +4,17 @@ class Pokemon
 
 
   def initialize (name, type, db)
-    
+
     @name = name
     @breed = breed
     @age = age
-    @@all << self
+  
 
   end
 
 
   def save
-
-
-
+    @@all << self
   end
 
   def find
