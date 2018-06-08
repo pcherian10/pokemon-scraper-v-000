@@ -1,14 +1,13 @@
 class Pokemon
 
-  attr_accessor :name, :type, :db
+  attr_accessor :name, :type
 
   @@all = []
 
   def initialize (name, type, db)
     @name = name
     @type = type
-    @db = db
-    @@all << self
+    self.save
   end
 
   def self.save (name, type, db)
@@ -45,4 +44,5 @@ Cat.new("Hana", "tortoiseshell", 1)
 Cat.all.each do |cat|
   Cat.save(cat.name, cat.breed, cat.age, database_connection)
 end
+
 =end
