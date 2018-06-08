@@ -18,7 +18,7 @@ class Pokemon
   end
 
   def self.find (id, db)
-    "SELECT pokemon. FROM db"
+    
   end
 
 
