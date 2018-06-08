@@ -2,22 +2,16 @@ class Pokemon
 
   @@all = []
 
-
-  def initialize (name, type, db)
-
+  def initialize (name, type)
     @name = name
-    @breed = breed
-    @age = age
-  
-
+    @type = type
   end
 
-
-  def save
-    @@all << self
+  def self.save (name, type, db)
+    db.execute("INSERT INTO pokemon (name, type) VALUES (?, ?)",name,type)
   end
 
-  def find
+  def self.
 
 
   end
@@ -48,7 +42,6 @@ class Cat
     database_connection.execute("INSERT INTO cats (name, breed, age) VALUES (?, ?, ?)",name, breed, age)
   end
 end
-
 
 database_connection = SQLite3::Database.new('db/pets.db')
 
