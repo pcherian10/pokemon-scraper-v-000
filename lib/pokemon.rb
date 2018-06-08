@@ -1,3 +1,5 @@
+require 'pry'
+
 class Pokemon
 
   attr_accessor :name, :type
@@ -5,6 +7,7 @@ class Pokemon
   @@all = []
 
   def initialize (id, name, type, db)
+    binding.pry
     @id = id
     @name = name
     @type = type
